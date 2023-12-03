@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
-  namespace: imperative-config-test
+  name: nginx
+  namespace: nginx
 spec:
   selector:
     matchLabels:
@@ -13,5 +13,6 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx 
-        image: nginx 
+      - name: nginx
+        image: nginx
+
